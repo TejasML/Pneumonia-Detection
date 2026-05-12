@@ -1,5 +1,8 @@
 streamlit
 tensorflow==2.19.0
-keras==3.10.0
+Pillow
 numpy
-pillow
+huggingface_hub
+opencv-python-headless
+matplotlib
+keras
