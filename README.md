@@ -318,16 +318,22 @@ streamlit run app/app.py
 ## App Screenshots
 
 **Home Screen**
+![App Home](images/results/app-home.png)
 
-![App Home](images/results/Screenshot 2026-05-12 165903.png)
+**Normal Prediction — Custom CNN**
+![CNN Normal](images/results/cnn-normal-prediction.png)
 
-**Normal Prediction**
+**Normal Prediction — DenseNet121**
+![DenseNet Normal](images/results/densenet-normal-prediction.png)
 
-![Normal Prediction](images/results/Screenshot 2026-05-12 165931.png)
+**Pneumonia Detected — Custom CNN**
+![CNN Pneumonia](images/results/cnn-pneumonia-prediction.png)
 
-**Pneumonia Detected**
+**Pneumonia Detected — DenseNet121**
+![DenseNet Pneumonia](images/results/densenet-pneumonia-prediction.png)
 
-![Pneumonia Prediction](images/results/Screenshot 2026-05-12 165952.png)
+**Recommended Precautions Panel**
+![Precautions](images/results/precautions-panel.png)
 
 ## Requirements
 
