@@ -1,4 +1,4 @@
-# LungLens AI — Pneumonia Detection from Chest X-Rays
+# PneumoScan AI — Pneumonia Detection from Chest X-Rays
 
 [![HuggingFace](https://img.shields.io/badge/Live%20Demo-HuggingFace%20Spaces-yellow)](https://huggingface.co/spaces/Tejas-ML/pneumonia-detection-app)
 [![Python](https://img.shields.io/badge/Python-3.12-blue)](https://www.python.org/)
@@ -20,7 +20,8 @@ A deep learning project that detects **Pneumonia from pediatric chest X-ray imag
 - [Model 1 — Custom CNN](#model-1--custom-cnn-built-from-scratch)
 - [Model 2 — Transfer Learning DenseNet121](#model-2--transfer-learning-densenet121)
 - [Model Comparison](#model-comparison)
-- [LungLens AI — Streamlit App](#lunglens-ai--streamlit-app)
+- [PneumoScan AI — Streamlit App](#pneumoscan-ai--streamlit-app)
+- [App Screenshots](#app-screenshots)
 - [Requirements](#requirements)
 - [Deployment](#deployment)
 - [Author](#author)
@@ -60,10 +61,15 @@ pneumonia-detection/
 │   └── transfer_learning_densenet.ipynb      # DenseNet121 — two-phase training, threshold optimization
 │
 ├── app/
-│   └── app.py                                # LungLens AI — Streamlit deployment application
+│   └── app.py                                # PneumoScan AI — Streamlit deployment application
+│
+├── images/
+│   ├── samples/                              # Sample Normal and Pneumonia X-ray images
+│   └── results/                              # App screenshots from Hugging Face deployment
 │
 ├── requirements.txt
 └── README.md
+
 ```
 
 > Model weight files (`.keras`) are not included in this repository due to size. They are hosted on and served from Hugging Face Hub — see [Deployment](#deployment).
@@ -272,7 +278,7 @@ The optimal threshold of **0.57** was selected and applied in the deployed appli
 
 ---
 
-## LungLens AI — Streamlit App
+## PneumoScan AI — Streamlit App
 
 The deployed web application allows users to upload a chest X-ray image and receive an instant AI-assisted diagnosis with a confidence score. The interface is designed to be clean, informative, and responsible in how it presents model outputs to non-technical users.
 
@@ -291,12 +297,12 @@ Users can switch between the Custom CNN and DenseNet121 at runtime. The app auto
 When Pneumonia is detected, the app renders a structured panel of 6 medical precautions: seek immediate medical attention, complete bed rest, hydration, infection control and isolation, respiratory monitoring, and avoidance of lung irritants.
 
 **Medical Disclaimer**
-Every prediction is accompanied by a prominent disclaimer stating that LungLens AI is a research and educational tool only and must not be used as a substitute for professional radiological diagnosis.
+Every prediction is accompanied by a prominent disclaimer stating that PneumoScan AI is a research and educational tool only and must not be used as a substitute for professional radiological diagnosis.
 
 ### Run Locally
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/pneumonia-detection.git
+git clone https://github.com/TejasML/Pneumonia-Detection.git
 cd pneumonia-detection
 pip install -r requirements.txt
 streamlit run app/app.py
@@ -308,6 +314,20 @@ streamlit run app/app.py
 > ```
 
 ---
+
+## App Screenshots
+
+**Home Screen**
+
+![App Home](images/results/Screenshot 2026-05-12 165903.png)
+
+**Normal Prediction**
+
+![Normal Prediction](images/results/Screenshot 2026-05-12 165931.png)
+
+**Pneumonia Detected**
+
+![Pneumonia Prediction](images/results/Screenshot 2026-05-12 165952.png)
 
 ## Requirements
 
